@@ -1,0 +1,236 @@
+{
+  "_meta": {
+    "verified": false,
+    "status": "PLACEHOLDER VALUES - TODO_VERIFY. Not field-validated, not agronomic guidance.",
+    "label": "Rule-based environmental context; trainable fusion is future work",
+    "how_it_works": "Past-7-day features are compared with the conditions below. Multipliers only reorder close calls when the CNN is below the confidence gate. They never change a confident prediction."
+  },
+  "feature_definitions": {
+    "window_hours": 168,
+    "day_start_hour": 6,
+    "day_end_hour": 18,
+    "high_humidity_pct": 90,
+    "rainy_day_mm": 1.0,
+    "_note": "Conventions used to compute features (TODO_VERIFY against the references you choose)."
+  },
+  "evaluation": {
+    "support_min_fraction": 0.67,
+    "conflict_max_fraction": 0.0,
+    "min_multiplier": 0.8,
+    "max_multiplier": 1.25
+  },
+  "diseases": {
+    "bacterial_leaf_blight": {
+      "conditions": [
+        {
+          "feature": "hours_humidity_gt90",
+          "min": 30,
+          "description": "hours of very high humidity",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "total_rainfall_mm",
+          "min": 20,
+          "description": "total rainfall",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "rainy_days",
+          "min": 3,
+          "description": "number of rainy days",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        }
+      ],
+      "supporting_multiplier": 1.15,
+      "conflicting_multiplier": 0.9,
+      "source": "TODO_VERIFY"
+    },
+    "bacterial_leaf_streak": {
+      "conditions": [
+        {
+          "feature": "hours_humidity_gt90",
+          "min": 30,
+          "description": "hours of very high humidity",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "total_rainfall_mm",
+          "min": 20,
+          "description": "total rainfall",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "rainy_days",
+          "min": 3,
+          "description": "number of rainy days",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        }
+      ],
+      "supporting_multiplier": 1.15,
+      "conflicting_multiplier": 0.9,
+      "source": "TODO_VERIFY"
+    },
+    "bacterial_panicle_blight": {
+      "conditions": [
+        {
+          "feature": "hours_humidity_gt90",
+          "min": 20,
+          "description": "hours of very high humidity",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "total_rainfall_mm",
+          "min": 15,
+          "description": "total rainfall",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "rainy_days",
+          "min": 2,
+          "description": "number of rainy days",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "mean_night_min_c",
+          "min": 22,
+          "max": 40,
+          "description": "mean night minimum temperature (C)",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        }
+      ],
+      "supporting_multiplier": 1.15,
+      "conflicting_multiplier": 0.9,
+      "source": "TODO_VERIFY"
+    },
+    "blast": {
+      "conditions": [
+        {
+          "feature": "hours_humidity_gt90",
+          "min": 40,
+          "description": "hours of very high humidity",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "total_rainfall_mm",
+          "min": 25,
+          "description": "total rainfall",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "rainy_days",
+          "min": 3,
+          "description": "number of rainy days",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "mean_night_min_c",
+          "min": 18,
+          "max": 28,
+          "description": "mean night minimum temperature (C)",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        }
+      ],
+      "supporting_multiplier": 1.15,
+      "conflicting_multiplier": 0.9,
+      "source": "TODO_VERIFY"
+    },
+    "brown_spot": {
+      "conditions": [
+        {
+          "feature": "hours_humidity_gt90",
+          "min": 25,
+          "description": "hours of very high humidity",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "total_rainfall_mm",
+          "min": 15,
+          "description": "total rainfall",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "rainy_days",
+          "min": 2,
+          "description": "number of rainy days",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        }
+      ],
+      "supporting_multiplier": 1.15,
+      "conflicting_multiplier": 0.9,
+      "source": "TODO_VERIFY"
+    },
+    "downy_mildew": {
+      "conditions": [
+        {
+          "feature": "hours_humidity_gt90",
+          "min": 40,
+          "description": "hours of very high humidity",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "total_rainfall_mm",
+          "min": 25,
+          "description": "total rainfall",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        },
+        {
+          "feature": "rainy_days",
+          "min": 3,
+          "description": "number of rainy days",
+          "source": "TODO_VERIFY",
+          "placeholder": true
+        }
+      ],
+      "supporting_multiplier": 1.15,
+      "conflicting_multiplier": 0.9,
+      "source": "TODO_VERIFY"
+    },
+    "dead_heart": {
+      "conditions": [],
+      "supporting_multiplier": 1.0,
+      "conflicting_multiplier": 1.0,
+      "source": "TODO_VERIFY",
+      "note": "TODO_VERIFY: no weather rule defined yet."
+    },
+    "hispa": {
+      "conditions": [],
+      "supporting_multiplier": 1.0,
+      "conflicting_multiplier": 1.0,
+      "source": "TODO_VERIFY",
+      "note": "TODO_VERIFY: no weather rule defined yet."
+    },
+    "tungro": {
+      "conditions": [],
+      "supporting_multiplier": 1.0,
+      "conflicting_multiplier": 1.0,
+      "source": "TODO_VERIFY",
+      "note": "TODO_VERIFY: no weather rule defined yet."
+    },
+    "normal": {
+      "conditions": [],
+      "supporting_multiplier": 1.0,
+      "conflicting_multiplier": 1.0,
+      "source": "TODO_VERIFY",
+      "note": "Healthy class has no weather rule."
+    }
+  }
+}

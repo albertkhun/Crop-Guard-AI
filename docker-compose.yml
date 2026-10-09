@@ -1,0 +1,91 @@
+# PaddyGuard local stack:  cp .env.example .env  (fill INTERNAL_KEY + Cloudinary)  &&  docker compose up --build
+#   client      http://localhost:5173
+#   server API  http://localhost:4000      (the only public API; the browser never talks to the AI service)
+#   ai-service  private to this network    (uncomment `ports` below to debug it directly)
+#
+# No model file or Cloudinary account yet?  MOCK_AI=true STORAGE_DRIVER=local docker compose up --build
+name: paddyguard
+
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+
+  ai-service:
+    build: ./ai-service
+    restart: unless-stopped
+    environment:
+      INTERNAL_KEY: ${INTERNAL_KEY:?Set INTERNAL_KEY in .env (any long random string)}
+      MOCK_AI: ${MOCK_AI:-false}
+      CONFIDENCE_THRESHOLD: ${CONFIDENCE_THRESHOLD:-0.85}
+      UNCLEAR_MIN_MAX_PROB: ${UNCLEAR_MIN_MAX_PROB:-0.40}
+      UNCLEAR_MAX_NORM_ENTROPY: ${UNCLEAR_MAX_NORM_ENTROPY:-0.80}
+      RESIZE_BACKEND: ${RESIZE_BACKEND:-pil}
+      WEATHER_CACHE_TTL_S: ${WEATHER_CACHE_TTL_S:-3600}
+    # ports: ["8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://localhost:8000/health', timeout=4)"]
+      interval: 15s
+      timeout: 6s
+      retries: 5
+      start_period: 120s   # TensorFlow import + model load
+
+  server:
+    build: ./server
+    restart: unless-stopped
+    depends_on:
+      mongo:
+        condition: service_healthy
+      ai-service:
+        condition: service_started   # the server copes with a still-booting AI service (retry + wake-up message)
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      PORT: 4000
+      MONGODB_URI: mongodb://mongo:27017/paddyguard
+      CLIENT_ORIGIN: ${CLIENT_ORIGIN:-http://localhost:5173}
+      AI_SERVICE_URL: http://ai-service:8000
+      AI_INTERNAL_KEY: ${INTERNAL_KEY}            # same secret as the AI service
+      AI_TIMEOUT_MS: ${AI_TIMEOUT_MS:-45000}
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-10}
+      RATE_LIMIT_SCANS: ${RATE_LIMIT_SCANS:-30}
+      STORAGE_DRIVER: ${STORAGE_DRIVER:-cloudinary}
+      CLOUDINARY_URL: ${CLOUDINARY_URL:-}
+      CLOUDINARY_CLOUD_NAME: ${CLOUDINARY_CLOUD_NAME:-}
+      CLOUDINARY_API_KEY: ${CLOUDINARY_API_KEY:-}
+      CLOUDINARY_API_SECRET: ${CLOUDINARY_API_SECRET:-}
+      CLOUDINARY_FOLDER: ${CLOUDINARY_FOLDER:-paddyguard/scans}
+      IMAGE_MAX_EDGE_PX: ${IMAGE_MAX_EDGE_PX:-1600}
+      LOCAL_UPLOAD_DIR: /app/uploads                # only used when STORAGE_DRIVER=local
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:4000}
+    volumes:
+      - uploads:/app/uploads
+    ports:
+      - "4000:4000"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:4000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 6s
+      retries: 5
+      start_period: 15s
+
+  client:
+    build:
+      context: ./client
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:4000}   # baked in at build time
+    restart: unless-stopped
+    depends_on:
+      - server
+    ports:
+      - "5173:80"
+
+volumes:
+  mongo-data:
+  uploads:

@@ -1,0 +1,4 @@
+{
+  "version": "paddy-mnv2-v1",
+  "notes": "Initial model, ~80% validation accuracy (author-reported). Replace this file when swapping the model."
+}

@@ -1,0 +1,310 @@
+{
+  "_meta": {
+    "status": "TODO_VERIFY",
+    "note": "Draft, cautious, general guidance. No doses. Every entry must be verified against ICAR / IRRI Rice Knowledge Bank. Strings in [TODO_VERIFY: ...] are placeholders to replace."
+  },
+  "classes": {
+    "bacterial_leaf_blight": {
+      "display_name": "Bacterial Leaf Blight",
+      "_todo": "TODO_VERIFY: Bacterial Leaf Blight guidance; also confirm whether similar-looking bacterial diseases need different handling.",
+      "verification": {
+        "status": "TODO_VERIFY",
+        "check_against": [
+          "ICAR / state agriculture university package of practices",
+          "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ]
+      },
+      "advice": {
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "immediate_actions": [
+          "Check several plants in different parts of the field to see how widespread the problem is.",
+          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
+          "Note the date, field stage and recent weather so an expert can advise you better.",
+          "[TODO_VERIFY: first-response field steps for Bacterial Leaf Blight from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+        ],
+        "organic_options": [
+          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
+        ],
+        "preventive": [
+          "Use certified, healthy seed.",
+          "Clean tools and boots when moving between fields. [TODO_VERIFY]",
+          "[TODO_VERIFY: resistant varieties, fertilizer and water management advice for this disease.]"
+        ],
+        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
+        "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+      }
+    },
+    "bacterial_leaf_streak": {
+      "display_name": "Bacterial Leaf Streak",
+      "_todo": "TODO_VERIFY: Bacterial Leaf Streak guidance; also confirm whether similar-looking bacterial diseases need different handling.",
+      "verification": {
+        "status": "TODO_VERIFY",
+        "check_against": [
+          "ICAR / state agriculture university package of practices",
+          "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ]
+      },
+      "advice": {
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "immediate_actions": [
+          "Check several plants in different parts of the field to see how widespread the problem is.",
+          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
+          "Note the date, field stage and recent weather so an expert can advise you better.",
+          "[TODO_VERIFY: first-response field steps for Bacterial Leaf Streak from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+        ],
+        "organic_options": [
+          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
+        ],
+        "preventive": [
+          "Use certified, healthy seed.",
+          "Clean tools and boots when moving between fields. [TODO_VERIFY]",
+          "[TODO_VERIFY: resistant varieties, fertilizer and water management advice for this disease.]"
+        ],
+        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
+        "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+      }
+    },
+    "bacterial_panicle_blight": {
+      "display_name": "Bacterial Panicle Blight",
+      "_todo": "TODO_VERIFY: Bacterial Panicle Blight guidance; also confirm whether similar-looking bacterial diseases need different handling.",
+      "verification": {
+        "status": "TODO_VERIFY",
+        "check_against": [
+          "ICAR / state agriculture university package of practices",
+          "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ]
+      },
+      "advice": {
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "immediate_actions": [
+          "Check several plants in different parts of the field to see how widespread the problem is.",
+          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
+          "Note the date, field stage and recent weather so an expert can advise you better.",
+          "[TODO_VERIFY: first-response field steps for Bacterial Panicle Blight from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+        ],
+        "organic_options": [
+          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
+        ],
+        "preventive": [
+          "Use certified, healthy seed.",
+          "Clean tools and boots when moving between fields. [TODO_VERIFY]",
+          "[TODO_VERIFY: resistant varieties, fertilizer and water management advice for this disease.]"
+        ],
+        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
+        "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+      }
+    },
+    "blast": {
+      "display_name": "Rice Blast",
+      "_todo": "TODO_VERIFY: blast guidance, including leaf vs neck/panicle blast differences.",
+      "verification": {
+        "status": "TODO_VERIFY",
+        "check_against": [
+          "ICAR / state agriculture university package of practices",
+          "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ]
+      },
+      "advice": {
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "immediate_actions": [
+          "Check several plants in different parts of the field to see how widespread the problem is.",
+          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
+          "Note the date, field stage and recent weather so an expert can advise you better.",
+          "[TODO_VERIFY: first-response field steps for Rice Blast from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+        ],
+        "organic_options": [
+          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
+        ],
+        "preventive": [
+          "Use certified, healthy seed.",
+          "Keep the field and bunds free of weeds and crop residue from earlier seasons. [TODO_VERIFY]",
+          "[TODO_VERIFY: resistant varieties, nutrient and water management advice for this disease.]"
+        ],
+        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
+        "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+      }
+    },
+    "brown_spot": {
+      "display_name": "Brown Spot",
+      "_todo": "TODO_VERIFY: brown spot guidance, including any link to nutrient stress.",
+      "verification": {
+        "status": "TODO_VERIFY",
+        "check_against": [
+          "ICAR / state agriculture university package of practices",
+          "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ]
+      },
+      "advice": {
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "immediate_actions": [
+          "Check several plants in different parts of the field to see how widespread the problem is.",
+          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
+          "Note the date, field stage and recent weather so an expert can advise you better.",
+          "[TODO_VERIFY: first-response field steps for Brown Spot from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+        ],
+        "organic_options": [
+          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
+        ],
+        "preventive": [
+          "Use certified, healthy seed.",
+          "Keep the field and bunds free of weeds and crop residue from earlier seasons. [TODO_VERIFY]",
+          "[TODO_VERIFY: resistant varieties, nutrient and water management advice for this disease.]"
+        ],
+        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
+        "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+      }
+    },
+    "dead_heart": {
+      "display_name": "Dead Heart (stem borer damage)",
+      "_todo": "TODO_VERIFY: stem borer management; confirm that dead-heart is the right stage-specific symptom name for the user's region.",
+      "verification": {
+        "status": "TODO_VERIFY",
+        "check_against": [
+          "ICAR / state agriculture university package of practices",
+          "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ]
+      },
+      "advice": {
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "immediate_actions": [
+          "Check several plants in different parts of the field to see how widespread the problem is.",
+          "Pull a few affected shoots gently and look for insects or tunnelling at the base, and tell your expert what you find.",
+          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
+          "Note the date, field stage and recent weather so an expert can advise you better.",
+          "[TODO_VERIFY: stem borer first-response steps from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+        ],
+        "organic_options": [
+          "[TODO_VERIFY: biological control / pheromone-trap options for stem borer.]"
+        ],
+        "preventive": [
+          "[TODO_VERIFY: timing of scouting, planting date, and field sanitation advice for stem borer.]"
+        ],
+        "recovery_timeline": "[TODO_VERIFY: damaged shoots do not recover; confirm what recovery to expect from new tillers.]",
+        "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+      }
+    },
+    "downy_mildew": {
+      "display_name": "Downy Mildew",
+      "_todo": "TODO_VERIFY: confirm symptom description and management for downy mildew in rice.",
+      "verification": {
+        "status": "TODO_VERIFY",
+        "check_against": [
+          "ICAR / state agriculture university package of practices",
+          "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ]
+      },
+      "advice": {
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "immediate_actions": [
+          "Check several plants in different parts of the field to see how widespread the problem is.",
+          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
+          "Note the date, field stage and recent weather so an expert can advise you better.",
+          "[TODO_VERIFY: first-response field steps for Downy Mildew from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+        ],
+        "organic_options": [
+          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
+        ],
+        "preventive": [
+          "Use certified, healthy seed.",
+          "Keep the field and bunds free of weeds and crop residue from earlier seasons. [TODO_VERIFY]",
+          "[TODO_VERIFY: resistant varieties, nutrient and water management advice for this disease.]"
+        ],
+        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
+        "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+      }
+    },
+    "hispa": {
+      "display_name": "Rice Hispa (insect damage)",
+      "_todo": "TODO_VERIFY: hispa management guidance.",
+      "verification": {
+        "status": "TODO_VERIFY",
+        "check_against": [
+          "ICAR / state agriculture university package of practices",
+          "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ]
+      },
+      "advice": {
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "immediate_actions": [
+          "Check several plants in different parts of the field to see how widespread the problem is.",
+          "Look closely at the leaf surface for the insect itself and tell your expert what you find.",
+          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
+          "Note the date, field stage and recent weather so an expert can advise you better.",
+          "[TODO_VERIFY: hispa first-response steps from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+        ],
+        "organic_options": [
+          "[TODO_VERIFY: non-chemical options for hispa.]"
+        ],
+        "preventive": [
+          "[TODO_VERIFY: field and bund sanitation, nitrogen management, scouting schedule for hispa.]"
+        ],
+        "recovery_timeline": "[TODO_VERIFY: typical recovery after the pest is controlled.]",
+        "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+      }
+    },
+    "normal": {
+      "display_name": "Healthy",
+      "_todo": "TODO_VERIFY: review the 'normal' wording; a healthy result from one photo is not a guarantee for the whole field.",
+      "verification": {
+        "status": "TODO_VERIFY",
+        "check_against": [
+          "ICAR / state agriculture university package of practices",
+          "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ]
+      },
+      "advice": {
+        "severity_guide": "No disease signs were detected in this photo.",
+        "immediate_actions": [
+          "No action is needed based on this photo.",
+          "Keep checking the crop regularly, especially after humid or rainy spells."
+        ],
+        "organic_options": [],
+        "preventive": [
+          "Keep scouting regularly, and photograph any new spots, streaks or damage early.",
+          "[TODO_VERIFY: general crop-health and nutrient-management reminders from ICAR / IRRI.]"
+        ],
+        "recovery_timeline": "Not applicable.",
+        "consult_expert_if": "you notice new spots, streaks, discolouration or insect damage even though this photo looked healthy.",
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+      }
+    },
+    "tungro": {
+      "display_name": "Tungro (viral)",
+      "_todo": "TODO_VERIFY: tungro management; confirm 'infected plants do not recover' wording before use.",
+      "verification": {
+        "status": "TODO_VERIFY",
+        "check_against": [
+          "ICAR / state agriculture university package of practices",
+          "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ]
+      },
+      "advice": {
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "immediate_actions": [
+          "Check several plants in different parts of the field to see how widespread the problem is.",
+          "Tungro is a virus spread by insects (green leafhoppers), so ask your expert about controlling the insect vector rather than the virus itself. [TODO_VERIFY]",
+          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
+          "Note the date, field stage and recent weather so an expert can advise you better.",
+          "[TODO_VERIFY: tungro first-response steps from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+        ],
+        "organic_options": [
+          "[TODO_VERIFY: non-chemical vector management options.]"
+        ],
+        "preventive": [
+          "[TODO_VERIFY: resistant varieties, synchronised planting and rogueing advice for tungro.]"
+        ],
+        "recovery_timeline": "[TODO_VERIFY: infected plants do not recover; confirm guidance on replanting vs continuing.]",
+        "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+      }
+    }
+  }
+}

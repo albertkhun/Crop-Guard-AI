@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "status": "TODO_VERIFY",
+    "note": "Photography guidance only ('shots' are merged and de-duplicated across the top-2 classes). Confirm which plant part best shows each problem."
+  },
+  "generic": "Use daylight, keep the photo in focus, and use a plain background if you can.",
+  "unclear": "We could not recognise a clear rice plant in this photo. Please retake it with the affected leaf or plant part filling most of the frame, in good daylight, and in focus.",
+  "classes": {
+    "bacterial_leaf_blight": {
+      "shots": [
+        "a close-up of a single lesion on one leaf, filling most of the frame",
+        "one photo of the whole affected leaf"
+      ]
+    },
+    "bacterial_leaf_streak": {
+      "shots": [
+        "a close-up of a single lesion on one leaf, filling most of the frame",
+        "one photo of the whole affected leaf"
+      ]
+    },
+    "bacterial_panicle_blight": {
+      "shots": [
+        "a close-up of the panicle (grain head)"
+      ]
+    },
+    "blast": {
+      "shots": [
+        "a close-up of a single lesion on one leaf, filling most of the frame",
+        "the neck of the panicle, if panicles are affected"
+      ]
+    },
+    "brown_spot": {
+      "shots": [
+        "a close-up of a single lesion on one leaf, filling most of the frame"
+      ]
+    },
+    "dead_heart": {
+      "shots": [
+        "the central shoot of the affected plant",
+        "one photo of the whole plant"
+      ]
+    },
+    "downy_mildew": {
+      "shots": [
+        "a close-up of a single lesion on one leaf, filling most of the frame"
+      ]
+    },
+    "hispa": {
+      "shots": [
+        "a close-up of the damaged leaf surface",
+        "the insect itself, if you can see it"
+      ]
+    },
+    "normal": {
+      "shots": [
+        "a close-up of the one leaf that looks suspicious"
+      ]
+    },
+    "tungro": {
+      "shots": [
+        "one photo of the whole plant",
+        "a close-up of a discoloured leaf"
+      ]
+    }
+  }
+}
