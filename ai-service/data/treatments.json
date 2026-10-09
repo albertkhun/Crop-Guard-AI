@@ -1,263 +1,460 @@
 {
   "_meta": {
-    "status": "TODO_VERIFY",
-    "note": "Draft, cautious, general guidance. No doses. Every entry must be verified against ICAR / IRRI Rice Knowledge Bank. Strings in [TODO_VERIFY: ...] are placeholders to replace."
+    "status": "SOURCED_NEEDS_EXPERT_REVIEW",
+    "generated": "2026-10-09",
+    "note": "Content rewritten from official sources (IRRI Rice Knowledge Bank, Assam Agricultural University Rice Knowledge Bank, TNAU Agritech Portal, Kerala Agricultural University, Govt of India PPQS, US university extension where Indian sources were missing). No doses. Chemical names appear only where an official source lists them and are not a prescription. Each class lists its sources and an evidence level (good / moderate / limited / general). A qualified agronomist should still review every entry before release.",
+    "evidence_levels": {
+      "good": "IRRI plus at least one Indian official source",
+      "moderate": "one official source of good quality, not India-specific",
+      "limited": "indirect sources only; do not rely on this entry",
+      "general": "general good practice, not disease-specific"
+    },
+    "fields_not_used_by_app": "symptoms, verification.* are stored here but the API does not return them yet"
   },
   "classes": {
     "bacterial_leaf_blight": {
       "display_name": "Bacterial Leaf Blight",
-      "_todo": "TODO_VERIFY: Bacterial Leaf Blight guidance; also confirm whether similar-looking bacterial diseases need different handling.",
+      "symptoms": [
+        "Seedlings (called kresek): leaves turn greyish green and roll up, then turn yellow to straw-coloured and wilt, and the whole seedling dries up and dies.",
+        "Older plants: water-soaked to yellow-orange stripes start at the leaf tip or edges and grow toward the leaf base, with a wavy margin.",
+        "On young stripes, milky dew-like drops of bacterial ooze can be seen early in the morning; they dry into small yellowish beads under the leaf.",
+        "Old stripes turn yellow to greyish white with small black dots, and in severe cases can reach the leaf sheath.",
+        "To tell kresek from stem borer damage: squeeze the base of the seedling. Kresek gives yellowish ooze and the plant does not pull out of the soil easily."
+      ],
       "verification": {
-        "status": "TODO_VERIFY",
+        "status": "SOURCED_NEEDS_EXPERT_REVIEW",
+        "evidence": "good",
         "check_against": [
-          "ICAR / state agriculture university package of practices",
+          "ICAR / state agriculture university package of practices (Manipur: ICAR Research Complex for NEH Region / KVK)",
           "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
-        ]
+        ],
+        "sources": [
+          {
+            "name": "IRRI Rice Knowledge Bank",
+            "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/bacterial-blight"
+          },
+          {
+            "name": "Assam Agricultural University, Rice Knowledge Bank: Major diseases of rice",
+            "url": "https://rkbassam.aau.ac.in/major-diseases-of-rice"
+          }
+        ],
+        "notes": "IRRI lists no chemical control; the Assam source lists an antibiotic spray. Treat the spray as an option for the officer to confirm."
       },
       "advice": {
-        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. Ask your local agriculture office which damage level triggers treatment in your area.",
         "immediate_actions": [
-          "Check several plants in different parts of the field to see how widespread the problem is.",
-          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
-          "Note the date, field stage and recent weather so an expert can advise you better.",
-          "[TODO_VERIFY: first-response field steps for Bacterial Leaf Blight from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+          "Check several plants in different parts of the field to see how widespread the stripes are, and check seedlings for kresek.",
+          "Stop or reduce nitrogen top-dressing as soon as you notice the disease (Assam Agricultural University). High nitrogen makes bacterial blight worse on susceptible varieties.",
+          "Drain waterlogged fields and nursery beds so they do not stay flooded (IRRI).",
+          "Remove weed hosts and plough under rice stubble, straw, ratoons and volunteer seedlings, which carry the bacteria (IRRI).",
+          "Ask your agriculture officer before spraying. Assam Agricultural University lists a streptomycin sulphate + tetracycline spray for this disease, while IRRI's fact sheet lists no chemical control. Confirm that the product is registered and follow its label."
         ],
-        "organic_options": [
-          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
-        ],
+        "organic_options": [],
         "preventive": [
-          "Use certified, healthy seed.",
-          "Clean tools and boots when moving between fields. [TODO_VERIFY]",
-          "[TODO_VERIFY: resistant varieties, fertilizer and water management advice for this disease.]"
+          "Plant resistant varieties. Ask your local agriculture office for the varieties recommended for your area.",
+          "Use balanced plant nutrients, especially nitrogen. Avoid heavy nitrogen on susceptible varieties.",
+          "Keep good drainage in fields and nurseries.",
+          "Keep fields clean: remove weed hosts, and plough under stubble, straw, ratoons and volunteer seedlings.",
+          "Let fallow fields dry out, which suppresses the bacteria in soil and plant residue."
         ],
-        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
+        "recovery_timeline": "Damaged leaves do not turn green again, and seedlings with kresek dry up and die (IRRI). Management aims to protect healthy plants and new growth, so watch the next leaves closely.",
         "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
-        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment. Chemical names below are taken from the cited official sources for reference only; they are not a prescription."
       }
     },
     "bacterial_leaf_streak": {
       "display_name": "Bacterial Leaf Streak",
-      "_todo": "TODO_VERIFY: Bacterial Leaf Streak guidance; also confirm whether similar-looking bacterial diseases need different handling.",
+      "symptoms": [
+        "Small, dark-green, water-soaked lines appear between the leaf veins. They later turn light brown to yellowish grey.",
+        "The streaks look see-through (translucent) when you hold the leaf up to the light.",
+        "In humid weather, yellow droplets of bacterial ooze can appear on the leaf surface.",
+        "In severe cases whole leaves turn brown and die. Late streaks join up and can look like bacterial leaf blight.",
+        "It can be confused with narrow brown spot. Narrow brown spot lesions are thicker, not see-through, and do not ooze.",
+        "To check: cut the edge of a streak, put it in a glass of water, and look for cloudy water after about 5 minutes."
+      ],
       "verification": {
-        "status": "TODO_VERIFY",
+        "status": "SOURCED_NEEDS_EXPERT_REVIEW",
+        "evidence": "good",
         "check_against": [
-          "ICAR / state agriculture university package of practices",
+          "ICAR / state agriculture university package of practices (Manipur: ICAR Research Complex for NEH Region / KVK)",
           "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ],
+        "sources": [
+          {
+            "name": "IRRI Rice Knowledge Bank",
+            "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/bacterial-leaf-streak"
+          },
+          {
+            "name": "Plantwise factsheet: Bacterial leaf streak on rice",
+            "url": "https://farmknowledge.info/sites/default/files/resource/20147800004.pdf"
+          },
+          {
+            "name": "Kerala Agricultural University: Rice, bacterial leaf streak",
+            "url": "https://celkau.in/crops/cereals/rice/leafstreak.php"
+          }
         ]
       },
       "advice": {
-        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. Ask your local agriculture office which damage level triggers treatment in your area.",
         "immediate_actions": [
-          "Check several plants in different parts of the field to see how widespread the problem is.",
-          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
-          "Note the date, field stage and recent weather so an expert can advise you better.",
-          "[TODO_VERIFY: first-response field steps for Bacterial Leaf Streak from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+          "Check several plants in different parts of the field to see how many leaves show streaks. The disease mostly affects plants from maximum tillering to panicle initiation.",
+          "Remove weed hosts and plough under rice stubble, straw, ratoons and volunteer seedlings (IRRI).",
+          "Drain the field during severe flooding (IRRI).",
+          "Do not move water from an infected field into other rice fields (Plantwise factsheet).",
+          "In severe cases where yield may be affected, IRRI says a copper-based fungicide applied at heading can control the disease. Ask your agriculture officer first and follow the label."
         ],
         "organic_options": [
-          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
+          "Kerala Agricultural University lists a spray of fresh cow dung extract (the clear liquid after letting it settle and sieving), alongside proper weed control."
         ],
         "preventive": [
-          "Use certified, healthy seed.",
-          "Clean tools and boots when moving between fields. [TODO_VERIFY]",
-          "[TODO_VERIFY: resistant varieties, fertilizer and water management advice for this disease.]"
+          "Plant resistant varieties.",
+          "Treat seed with hot water (IRRI). In streak-prone areas, Kerala Agricultural University also lists seed treatment with bleaching powder and zinc sulphate.",
+          "Keep fields clean of weed hosts and plough under stubble, straw, ratoons and volunteer seedlings.",
+          "Use balanced plant nutrients, especially nitrogen, and keep good drainage in fields and nurseries.",
+          "Dry the field during the fallow period to kill bacteria in soil and plant residue."
         ],
-        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
+        "recovery_timeline": "Mature rice plants can recover easily from leaf streak and usually lose little grain yield (IRRI). Damage matters most in young plants, from maximum tillering to panicle initiation.",
         "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
-        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment. Chemical names below are taken from the cited official sources for reference only; they are not a prescription."
       }
     },
     "bacterial_panicle_blight": {
       "display_name": "Bacterial Panicle Blight",
-      "_todo": "TODO_VERIFY: Bacterial Panicle Blight guidance; also confirm whether similar-looking bacterial diseases need different handling.",
+      "symptoms": [
+        "Symptoms appear at heading. Grains in the panicle turn white to light grey, with a dark-brown edge on the lower third of the grain.",
+        "Early on, the stalk branches of the panicle stay green. Later the grains turn straw-coloured and may darken with secondary fungi.",
+        "Heavily infected panicles stay upright because the grains are empty (blanked). Some grains are aborted with a dark rot at the base.",
+        "Some tillers have a dark brown lesion on the flag leaf sheath.",
+        "It can be confused with wind damage, water stress, other environmental stress, or stem borer damage."
+      ],
       "verification": {
-        "status": "TODO_VERIFY",
+        "status": "SOURCED_NEEDS_EXPERT_REVIEW",
+        "evidence": "moderate",
         "check_against": [
-          "ICAR / state agriculture university package of practices",
+          "ICAR / state agriculture university package of practices (Manipur: ICAR Research Complex for NEH Region / KVK)",
           "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
-        ]
+        ],
+        "sources": [
+          {
+            "name": "University of Arkansas Division of Agriculture: Bacterial Panicle Blight of Rice in Arkansas (FSA7580)",
+            "url": "https://www.uaex.uada.edu/publications/pdf/FSA-7580.pdf"
+          }
+        ],
+        "notes": "The best official source found is a US university bulletin. No IRRI factsheet was found, and no Indian official source was verified. Ask a state agriculture university for local guidance."
       },
       "advice": {
-        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "severity_guide": "Walk through several parts of the field and count how many panicles show white to grey blighted grains. Symptoms can look like water stress or stem borer, so ask your agriculture office to confirm.",
         "immediate_actions": [
-          "Check several plants in different parts of the field to see how widespread the problem is.",
-          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
-          "Note the date, field stage and recent weather so an expert can advise you better.",
-          "[TODO_VERIFY: first-response field steps for Bacterial Panicle Blight from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+          "Check several panicles in different parts of the field. Note whether affected plants are near tree lines, canals or other places where dew stays long.",
+          "Compare with stem borer (whiteheads that pull out easily) and water stress before deciding the cause.",
+          "Do not expect a spray to fix it: the University of Arkansas found no seed treatment or foliar product reliably effective, and copper fungicides did not work in the field. Ask your agriculture officer what is recommended locally.",
+          "Keep a record of the variety, sowing date and seed source, because the disease is mainly carried on seed."
         ],
-        "organic_options": [
-          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
-        ],
+        "organic_options": [],
         "preventive": [
-          "Use certified, healthy seed.",
-          "Clean tools and boots when moving between fields. [TODO_VERIFY]",
-          "[TODO_VERIFY: resistant varieties, fertilizer and water management advice for this disease.]"
+          "Use clean, healthy seed. The disease is mainly seed-borne.",
+          "Plant resistant or moderately resistant varieties where available.",
+          "Plant early so heading does not fall in the hottest, most humid weeks. In Arkansas trials, early planting had the biggest effect.",
+          "Avoid very high nitrogen rates and avoid sowing too much seed, both of which increased the disease.",
+          "Irrigation changes had only a small effect, and the researchers did not recommend changing irrigation just for this disease."
         ],
-        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
+        "recovery_timeline": "Blighted, empty grains do not fill again. Prevention in the next crop (clean seed, timing, nitrogen and seed rate) matters most, because symptoms only show at heading.",
         "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
         "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
       }
     },
     "blast": {
       "display_name": "Rice Blast",
-      "_todo": "TODO_VERIFY: blast guidance, including leaf vs neck/panicle blast differences.",
+      "symptoms": [
+        "Leaf: spots start white to grey-green with dark green borders. Older spots are diamond or spindle shaped, wide in the middle and pointed at both ends, with whitish-grey centres and red-brown edges.",
+        "Spots can join up and kill whole leaves. Blast can kill seedlings.",
+        "Collar: white to grey-green lesions where the leaf blade meets the sheath.",
+        "Node: black areas ring the stem nodes, and the stem may break.",
+        "Neck: the stalk just below the panicle turns brownish black. Infections at the nodes below the flower head can lead to death of the stem.",
+        "Blast spots can look like brown spot. Blast spots are long and pointed; brown spot spots are rounder, brown, with a yellow halo."
+      ],
       "verification": {
-        "status": "TODO_VERIFY",
+        "status": "SOURCED_NEEDS_EXPERT_REVIEW",
+        "evidence": "good",
         "check_against": [
-          "ICAR / state agriculture university package of practices",
+          "ICAR / state agriculture university package of practices (Manipur: ICAR Research Complex for NEH Region / KVK)",
           "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ],
+        "sources": [
+          {
+            "name": "IRRI Rice Knowledge Bank",
+            "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/blast-leaf-collar"
+          },
+          {
+            "name": "Assam Agricultural University, Rice Knowledge Bank: Major diseases of rice",
+            "url": "https://rkbassam.aau.ac.in/major-diseases-of-rice"
+          },
+          {
+            "name": "Pacific Pests and Pathogens: Rice blast (252), based on IRRI RKB and CABI",
+            "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/rice_blast_252.htm"
+          },
+          {
+            "name": "Plant Protection, Quarantine & Storage (Govt of India): Advisory on rice blast",
+            "url": "https://ppqs.gov.in/sites/default/files/rice_blast_advisory.pdf"
+          }
         ]
       },
       "advice": {
-        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. Ask your local agriculture office which damage level triggers treatment in your area.",
         "immediate_actions": [
-          "Check several plants in different parts of the field to see how widespread the problem is.",
-          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
-          "Note the date, field stage and recent weather so an expert can advise you better.",
-          "[TODO_VERIFY: first-response field steps for Rice Blast from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+          "Check several plants for spindle-shaped leaf spots, and look at the nodes and the neck below the panicle, because neck blast does the most damage.",
+          "Split nitrogen into two or more applications and avoid excess fertiliser, which increases blast (IRRI).",
+          "Flood the field as often as possible (IRRI), unless your officer advises otherwise for your fields.",
+          "Ask your agriculture officer about a fungicide. Assam Agricultural University lists tricyclazole or isoprothiolane sprays, and IRRI-based guidance notes sprays are best timed around heading. Follow the label."
         ],
         "organic_options": [
-          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
+          "Seed treatment with the biocontrol agents Pseudomonas fluorescens or Trichoderma harzianum (Assam Agricultural University).",
+          "A Pseudomonas fluorescens foliar spray is listed in the Government of India Plant Protection advisory for blast."
         ],
         "preventive": [
-          "Use certified, healthy seed.",
-          "Keep the field and bunds free of weeds and crop residue from earlier seasons. [TODO_VERIFY]",
-          "[TODO_VERIFY: resistant varieties, nutrient and water management advice for this disease.]"
+          "Plant resistant varieties. IRRI says this is the primary way to control blast.",
+          "Sow early after the rains begin, and try to avoid flowering in the wettest weeks.",
+          "Space plants so air can flow, and avoid overlapping crops. Neighbouring farmers planting at the same time helps limit spread.",
+          "Remove volunteer rice, weeds and crop residue, and clear trash after harvest, because the fungus survives in straw and stubble."
         ],
-        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
-        "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
-        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+        "recovery_timeline": "Leaf blast usually lessens as plants mature and develop resistance (IRRI), but node and neck infections can kill the stem or panicle and do not recover.",
+        "consult_expert_if": "symptoms appear on the neck or nodes, the disease is spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment. Chemical names below are taken from the cited official sources for reference only; they are not a prescription."
       }
     },
     "brown_spot": {
       "display_name": "Brown Spot",
-      "_todo": "TODO_VERIFY: brown spot guidance, including any link to nutrient stress.",
+      "symptoms": [
+        "Seedlings: small, round, yellow-brown to brown spots that can ring the shoot and distort the first leaves.",
+        "Leaves, from tillering: spots start small, round and dark brown to purple-brown. Full-grown spots are round to oval with a light brown to grey centre and a reddish-brown edge.",
+        "On susceptible varieties spots are 5 to 14 mm long and can make leaves wilt. On resistant varieties they stay small, brown and pinhead sized.",
+        "Panicles and grains: dark brown to black oval spots on grain husks and panicle branches, giving spotted, discoloured, or poorly filled grains.",
+        "It can be mistaken for blast. Brown spot spots are round, brownish, with a grey centre and a reddish edge."
+      ],
       "verification": {
-        "status": "TODO_VERIFY",
+        "status": "SOURCED_NEEDS_EXPERT_REVIEW",
+        "evidence": "good",
         "check_against": [
-          "ICAR / state agriculture university package of practices",
+          "ICAR / state agriculture university package of practices (Manipur: ICAR Research Complex for NEH Region / KVK)",
           "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ],
+        "sources": [
+          {
+            "name": "IRRI Rice Knowledge Bank",
+            "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/brown-spot"
+          },
+          {
+            "name": "Assam Agricultural University, Rice Knowledge Bank: Major diseases of rice",
+            "url": "https://rkbassam.aau.ac.in/major-diseases-of-rice"
+          }
         ]
       },
       "advice": {
-        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. Ask your local agriculture office which damage level triggers treatment in your area.",
         "immediate_actions": [
-          "Check several plants in different parts of the field to see how widespread the problem is.",
-          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
-          "Note the date, field stage and recent weather so an expert can advise you better.",
-          "[TODO_VERIFY: first-response field steps for Brown Spot from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+          "Check several plants for round brown spots with grey centres, and look at the leaf sheaths and grains too.",
+          "Improve soil fertility, which IRRI calls the first step: monitor soil nutrients, apply the fertilisers the soil needs, and in low-silicon soils apply calcium silicate slag before planting.",
+          "Ask your agriculture officer about a spray. Assam Agricultural University lists propineb or chlorothalonil sprays as soon as the disease is noticed, with a second spray after 10 days. Follow the label."
         ],
         "organic_options": [
-          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
+          "Treat seed with hot water, 53 to 54 °C for 10 to 12 minutes, after pre-soaking in cold water for 8 hours, to control early seedling infection (IRRI).",
+          "Remove infected rice debris and volunteer rice, which are sources of the fungus."
         ],
         "preventive": [
-          "Use certified, healthy seed.",
-          "Keep the field and bunds free of weeds and crop residue from earlier seasons. [TODO_VERIFY]",
-          "[TODO_VERIFY: resistant varieties, nutrient and water management advice for this disease.]"
+          "Use resistant varieties. Ask your local agriculture office for the current list.",
+          "Treat seed. IRRI lists seed treatment with fungicides such as iprodione, propiconazole, azoxystrobin, trifloxystrobin or carbendazim.",
+          "Keep soil nutrition balanced. Brown spot is common in unflooded, nutrient-poor soils.",
+          "Control weeds and remove volunteer rice and infected debris."
         ],
-        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
+        "recovery_timeline": "Spotted leaf area does not recover. Infection matters most from maximum tillering to ripening (IRRI), so protect the crop through that period.",
         "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
-        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment. Chemical names below are taken from the cited official sources for reference only; they are not a prescription."
       }
     },
     "dead_heart": {
       "display_name": "Dead Heart (stem borer damage)",
-      "_todo": "TODO_VERIFY: stem borer management; confirm that dead-heart is the right stage-specific symptom name for the user's region.",
+      "symptoms": [
+        "Before flowering: the central shoot of the tiller turns brown, dries up and dies. The young central leaf folds and dries.",
+        "The dead shoot pulls out easily by hand. Tiny holes and insect droppings may be seen at the base of the tiller.",
+        "A brown egg mass may be seen near the leaf tip.",
+        "After flowering the same pest causes 'white ears': panicles that are whitish and have empty grains, and also pull out easily.",
+        "Damage at early tillering often has little yield effect because the plant grows extra tillers."
+      ],
       "verification": {
-        "status": "TODO_VERIFY",
+        "status": "SOURCED_NEEDS_EXPERT_REVIEW",
+        "evidence": "good",
         "check_against": [
-          "ICAR / state agriculture university package of practices",
+          "ICAR / state agriculture university package of practices (Manipur: ICAR Research Complex for NEH Region / KVK)",
           "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
-        ]
+        ],
+        "sources": [
+          {
+            "name": "IRRI Rice Knowledge Bank",
+            "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects/item/stem-borer"
+          },
+          {
+            "name": "PhilRice / IRRI: Stemborer fact sheet",
+            "url": "https://dbmp.philrice.gov.ph/CPD/Stemborer/PDF files/Stemborer fact sheet.pdf"
+          },
+          {
+            "name": "TNAU Agritech Portal: Paddy stem borer",
+            "url": "https://agritech.tnau.ac.in/crop_protection/rice/crop_prot_crop_insectpest%20_cereals_paddy_m1.html"
+          },
+          {
+            "name": "Assam Agricultural University, Rice Knowledge Bank: Major insect-pests of rice",
+            "url": "https://rkbassam.aau.ac.in/major-inspects-of-rice"
+          }
+        ],
+        "notes": "Action thresholds differ between official pages (5%, 10%, 25% dead hearts; 1 to 2 egg masses per square metre), so none is stated as a rule."
       },
       "advice": {
-        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "severity_guide": "Count the share of tillers with dead hearts in several places in the field. Official sources give different action levels (for example 5%, 10% or 25% dead hearts, or egg masses per square metre), so ask your local agriculture office which applies to you.",
         "immediate_actions": [
-          "Check several plants in different parts of the field to see how widespread the problem is.",
-          "Pull a few affected shoots gently and look for insects or tunnelling at the base, and tell your expert what you find.",
-          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
-          "Note the date, field stage and recent weather so an expert can advise you better.",
-          "[TODO_VERIFY: stem borer first-response steps from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+          "Check several plants in different parts of the field. Pull a dead shoot gently and look for tunnelling, holes and droppings at the base. Tell your expert what you find.",
+          "Make sure it is not bacterial kresek: kresek seedlings ooze yellow liquid when squeezed and do not pull out easily.",
+          "Look for brown egg masses near leaf tips and destroy them (TNAU).",
+          "Ask your agriculture officer before using an insecticide. Natural enemies may control the borer, so spraying can be delayed or avoided (TNAU). Assam Agricultural University lists releasing Trichogramma egg parasitoids and, if needed, flubendiamide. Confirm the product is currently registered and follow the label."
         ],
         "organic_options": [
-          "[TODO_VERIFY: biological control / pheromone-trap options for stem borer.]"
+          "Release the egg parasitoid Trichogramma japonicum (TNAU, Assam Agricultural University).",
+          "Spray neem seed kernel extract 5% or azadirachtin (TNAU).",
+          "Use pheromone and light traps to monitor and catch moths (TNAU).",
+          "Clip leaf tips of seedlings before transplanting to remove egg masses (TNAU, Assam Agricultural University)."
         ],
         "preventive": [
-          "[TODO_VERIFY: timing of scouting, planting date, and field sanitation advice for stem borer.]"
+          "Plant at the right time and together with neighbouring farmers (synchronous planting), with a fallow period between crops, so borers lose their food supply (IRRI).",
+          "Use resistant varieties where available.",
+          "Harvest at ground level, then remove stubble and volunteer rice, and plough and flood the field to destroy larvae and pupae (IRRI).",
+          "Do not over-apply nitrogen fertiliser, and protect beneficial insects."
         ],
-        "recovery_timeline": "[TODO_VERIFY: damaged shoots do not recover; confirm what recovery to expect from new tillers.]",
+        "recovery_timeline": "Damaged shoots do not recover. If damage happens at early tillering the plant can make up for it with extra tillers and yield loss is small (IRRI, PhilRice). Damage at panicle stage causes white ears that stay empty.",
         "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
-        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment. Chemical names below are taken from the cited official sources for reference only; they are not a prescription."
       }
     },
     "downy_mildew": {
       "display_name": "Downy Mildew",
-      "_todo": "TODO_VERIFY: confirm symptom description and management for downy mildew in rice.",
+      "symptoms": [
+        "General downy mildew (Sclerophthora macrospora, also called crazy top) in cereals: stunted, yellowing plants with extra tillers.",
+        "Leaves can be thickened, leathery, twisted or warty, and flower heads can be twisted with leafy, proliferated parts and few grains.",
+        "Affected plants are often scattered in or beside standing water, in wet or poorly drained spots.",
+        "It can be confused with herbicide (glyphosate) damage, which does not cause warty or thickened leaves."
+      ],
       "verification": {
-        "status": "TODO_VERIFY",
+        "status": "SOURCED_NEEDS_EXPERT_REVIEW",
+        "evidence": "limited",
         "check_against": [
-          "ICAR / state agriculture university package of practices",
+          "ICAR / state agriculture university package of practices (Manipur: ICAR Research Complex for NEH Region / KVK)",
           "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
-        ]
+        ],
+        "sources": [
+          {
+            "name": "University of Arkansas Plant Health Clinic: downy mildew of wheat (crazy top)",
+            "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/docs/2008_Plant_Health_Clinic_Newsletters/Plant%20Health%20Clinic%20Newsletter-Issue%208.pdf"
+          },
+          {
+            "name": "University of Missouri IPM: Crazy top",
+            "url": "https://ipm.missouri.edu/cropPest/2011/5/Crazy-Top-of-Corn"
+          },
+          {
+            "name": "CABI Compendium: Sclerophthora macrospora (downy mildew, yellow wilt of rice)",
+            "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.49243"
+          }
+        ],
+        "notes": "Symptoms and drainage advice come from extension pages on the same pathogen in other cereals. No rice-specific IRRI, ICAR or TNAU page was found. Needs expert review before use."
       },
       "advice": {
-        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. Ask your local agriculture office which damage level triggers treatment in your area.",
         "immediate_actions": [
-          "Check several plants in different parts of the field to see how widespread the problem is.",
-          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
-          "Note the date, field stage and recent weather so an expert can advise you better.",
-          "[TODO_VERIFY: first-response field steps for Downy Mildew from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+          "Check whether the affected plants are in low, waterlogged or poorly drained patches.",
+          "Improve drainage in those areas. For downy mildew in cereals, university extension sources say drainage is the main practical measure, and that no chemical control is recommended.",
+          "Show a photo to your agriculture officer to rule out herbicide damage or other causes, because rice-specific official guidance is limited."
         ],
-        "organic_options": [
-          "[TODO_VERIFY: organic / biological options with evidence for this disease.]"
-        ],
+        "organic_options": [],
         "preventive": [
-          "Use certified, healthy seed.",
-          "Keep the field and bunds free of weeds and crop residue from earlier seasons. [TODO_VERIFY]",
-          "[TODO_VERIFY: resistant varieties, nutrient and water management advice for this disease.]"
+          "Avoid waterlogging, especially in the seedling stage. Infection is more likely when soil is saturated early on.",
+          "Keep field drainage and water management good."
         ],
-        "recovery_timeline": "[TODO_VERIFY: typical recovery / stabilisation time after correct management.]",
-        "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
+        "recovery_timeline": "",
+        "consult_expert_if": "symptoms are spreading beyond wet patches, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide. Rice-specific official guidance is limited, so expert advice is especially important for this result.",
         "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
       }
     },
     "hispa": {
       "display_name": "Rice Hispa (insect damage)",
-      "_todo": "TODO_VERIFY: hispa management guidance.",
+      "symptoms": [
+        "Adult beetles scrape the upper surface of the leaf and leave white streaks running parallel to the midrib.",
+        "Grubs tunnel inside the leaf and make irregular see-through white patches or blisters, often near the leaf tip.",
+        "Damaged leaves turn whitish and papery, then wither. A heavily attacked field looks burnt.",
+        "The beetle is small and dark blue-black with spines on its body. Flea beetle damage looks similar, so look for the insect itself."
+      ],
       "verification": {
-        "status": "TODO_VERIFY",
+        "status": "SOURCED_NEEDS_EXPERT_REVIEW",
+        "evidence": "good",
         "check_against": [
-          "ICAR / state agriculture university package of practices",
+          "ICAR / state agriculture university package of practices (Manipur: ICAR Research Complex for NEH Region / KVK)",
           "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
-        ]
+        ],
+        "sources": [
+          {
+            "name": "IRRI Rice Knowledge Bank",
+            "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects/item/rice-hispa"
+          },
+          {
+            "name": "TNAU Agritech Portal: Rice hispa",
+            "url": "https://agritech.tnau.ac.in/crop_protection/rice/crop_prot_crop_insectpest%20_cereals_paddy_m9.html"
+          },
+          {
+            "name": "Assam Agricultural University, Rice Knowledge Bank: Major insect-pests of rice",
+            "url": "https://rkbassam.aau.ac.in/major-inspects-of-rice"
+          }
+        ],
+        "notes": "IRRI's management list says 'keep close plant spacing' while its own 'why it occurs' section says close spacing favours hispa. That line was left out. Carbofuran is listed by TNAU but was left out because it is highly toxic."
       },
       "advice": {
-        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "severity_guide": "Walk through several parts of the field and count beetles per hill and leaves with streaks or blisters. TNAU gives 2 adults per hill as its action level; ask your local agriculture office which level applies to you.",
         "immediate_actions": [
-          "Check several plants in different parts of the field to see how widespread the problem is.",
-          "Look closely at the leaf surface for the insect itself and tell your expert what you find.",
-          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
-          "Note the date, field stage and recent weather so an expert can advise you better.",
-          "[TODO_VERIFY: hispa first-response steps from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+          "Check several plants for the beetle and for white streaks and blisters. Tell your expert what you find.",
+          "Avoid over-fertilising. If hispa is common, TNAU says nitrogen top-dressing may be skipped.",
+          "Collecting adult beetles with a sweep net and destroying them can help (TNAU).",
+          "Ask your agriculture officer before spraying. Official Indian sources list insecticides such as chlorantraniliprole (Assam Agricultural University) or emamectin benzoate and malathion (TNAU) once the pest passes the local threshold. Follow the label."
         ],
         "organic_options": [
-          "[TODO_VERIFY: non-chemical options for hispa.]"
+          "Encourage natural enemies: small wasps (attack eggs and grubs), the reduviid bug and fungal pathogens (attack adults) (IRRI)."
         ],
         "preventive": [
-          "[TODO_VERIFY: field and bund sanitation, nitrogen management, scouting schedule for hispa.]"
+          "Remove grassy weeds in and around the field, because they host the pest (IRRI).",
+          "Clip leaf tips of seedlings before transplanting, and destroy alternate food plants (Assam Agricultural University).",
+          "Avoid heavy fertiliser and avoid very close, dense planting, which favour hispa build-up (IRRI).",
+          "Remove rice ratoons and volunteer rice between crops."
         ],
-        "recovery_timeline": "[TODO_VERIFY: typical recovery after the pest is controlled.]",
+        "recovery_timeline": "Eaten leaf tissue does not grow back. When damage is severe the plants lose vigour (IRRI), so protecting new leaves is what counts.",
         "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
-        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
+        "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment. Chemical names below are taken from the cited official sources for reference only; they are not a prescription."
       }
     },
     "normal": {
       "display_name": "Healthy",
-      "_todo": "TODO_VERIFY: review the 'normal' wording; a healthy result from one photo is not a guarantee for the whole field.",
+      "symptoms": [
+        "No spots, streaks, stripes, discolouration, wilting, or insect feeding marks are visible on the leaf in this photo.",
+        "A healthy result from one photo does not guarantee that the whole field is healthy."
+      ],
       "verification": {
-        "status": "TODO_VERIFY",
+        "status": "SOURCED_NEEDS_EXPERT_REVIEW",
+        "evidence": "general",
         "check_against": [
-          "ICAR / state agriculture university package of practices",
+          "ICAR / state agriculture university package of practices (Manipur: ICAR Research Complex for NEH Region / KVK)",
           "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
+        ],
+        "sources": [
+          {
+            "name": "IRRI Rice Knowledge Bank",
+            "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/blast-leaf-collar"
+          },
+          {
+            "name": "IRRI Rice Knowledge Bank",
+            "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/bacterial-blight"
+          }
         ]
       },
       "advice": {
@@ -269,39 +466,63 @@
         "organic_options": [],
         "preventive": [
           "Keep scouting regularly, and photograph any new spots, streaks or damage early.",
-          "[TODO_VERIFY: general crop-health and nutrient-management reminders from ICAR / IRRI.]"
+          "Use balanced plant nutrients, and avoid heavy nitrogen, which makes several rice diseases worse (IRRI).",
+          "Keep fields clean of weeds, volunteer rice and old stubble, which carry many rice diseases and pests (IRRI)."
         ],
-        "recovery_timeline": "Not applicable.",
+        "recovery_timeline": "",
         "consult_expert_if": "you notice new spots, streaks, discolouration or insect damage even though this photo looked healthy.",
         "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
       }
     },
     "tungro": {
       "display_name": "Tungro (viral)",
-      "_todo": "TODO_VERIFY: tungro management; confirm 'infected plants do not recover' wording before use.",
+      "symptoms": [
+        "Leaves turn yellow or orange-yellow, starting at the leaf tip and moving down. The colour can change from light green to yellow to yellow-orange.",
+        "Leaves may be mottled or striped, with rust-coloured spots.",
+        "Plants are stunted with fewer tillers and delayed flowering. Panicles are small and partly out, with many empty or partly filled grains that have dark brown blotches.",
+        "It can be confused with nitrogen or zinc deficiency, water stress, stem borer or planthopper damage, and grassy stunt virus. Check for green leafhoppers on the plants.",
+        "Varieties with some resistance may show no or only mild yellowing that can fade as the plants mature."
+      ],
       "verification": {
-        "status": "TODO_VERIFY",
+        "status": "SOURCED_NEEDS_EXPERT_REVIEW",
+        "evidence": "good",
         "check_against": [
-          "ICAR / state agriculture university package of practices",
+          "ICAR / state agriculture university package of practices (Manipur: ICAR Research Complex for NEH Region / KVK)",
           "IRRI Rice Knowledge Bank (knowledgebank.irri.org)"
-        ]
+        ],
+        "sources": [
+          {
+            "name": "IRRI Rice Knowledge Bank",
+            "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/tungro"
+          },
+          {
+            "name": "IRRI Rice Knowledge Bank: Green leafhopper",
+            "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects/item/green-leafhopper"
+          },
+          {
+            "name": "TNAU Agritech Portal: Rice tungro",
+            "url": "https://agritech.tnau.ac.in/crop_protection/rice_diseases/another methods_rice_23.html"
+          }
+        ],
+        "notes": "IRRI says insecticides often fail against tungro; TNAU recommends timely vector control. Both views are stated so an expert can decide."
       },
       "advice": {
-        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. [TODO_VERIFY: add the severity / economic-threshold guidance for this problem from ICAR or IRRI.]",
+        "severity_guide": "Walk through several parts of the field and compare how many plants and how much leaf area show these symptoms. Ask your local agriculture office which damage level triggers treatment in your area.",
         "immediate_actions": [
-          "Check several plants in different parts of the field to see how widespread the problem is.",
-          "Tungro is a virus spread by insects (green leafhoppers), so ask your expert about controlling the insect vector rather than the virus itself. [TODO_VERIFY]",
-          "Show this photo to your local agriculture officer or KVK before deciding on any pesticide.",
-          "Note the date, field stage and recent weather so an expert can advise you better.",
-          "[TODO_VERIFY: tungro first-response steps from ICAR / IRRI.] [TODO_VERIFY: list example active ingredients recommended in official guidance for this problem; do not use without expert advice and the product label.]"
+          "Check several plants for leafhoppers (pale green adults, yellow or pale green nymphs on the upper plant) and for yellow-orange leaves.",
+          "Look at nearby fields and at volunteer rice and grassy weeds, which can carry the virus.",
+          "Once a plant is infected it cannot be cured (IRRI). Show the photo to your agriculture officer to confirm, because tungro looks like nutrient problems.",
+          "Do not rely on insecticide alone. IRRI says spraying leafhoppers often fails to prevent tungro because the insects keep moving in from nearby fields. TNAU lists timely leafhopper control and light traps as part of management, so ask your officer what works locally."
         ],
-        "organic_options": [
-          "[TODO_VERIFY: non-chemical vector management options.]"
-        ],
+        "organic_options": [],
         "preventive": [
-          "[TODO_VERIFY: resistant varieties, synchronised planting and rogueing advice for tungro.]"
+          "Grow tungro-resistant or leafhopper-resistant varieties. IRRI calls this the most economical way to manage tungro.",
+          "Plant at the same time as surrounding farms (synchronous planting) and avoid late planting.",
+          "Adjust planting dates to when green leafhoppers are not abundant, if this is known in your area.",
+          "Plough infected stubble immediately after harvest to remove virus sources and leafhopper breeding sites.",
+          "Remove volunteer rice and grassy weeds, and use nitrogen only as needed, since leafhoppers prefer heavily fertilised rice."
         ],
-        "recovery_timeline": "[TODO_VERIFY: infected plants do not recover; confirm guidance on replanting vs continuing.]",
+        "recovery_timeline": "Infected plants cannot be cured (IRRI). Resistant varieties may only show mild symptoms that can fade as the plant matures, but susceptible plants stay stunted.",
         "consult_expert_if": "symptoms are spreading quickly across the field, the plants are in the flowering or grain-filling stage, you are unsure about the diagnosis, or you are considering a pesticide.",
         "safety_note": "This is an AI-assisted suggestion from a photo, not a confirmed diagnosis. Confirm with your local agriculture officer or Krishi Vigyan Kendra before applying any pesticide. Follow the product label and local regulations, and use protective equipment."
       }

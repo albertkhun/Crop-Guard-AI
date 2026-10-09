@@ -1,65 +1,82 @@
 {
   "_meta": {
     "status": "TODO_VERIFY",
-    "note": "Photography guidance only ('shots' are merged and de-duplicated across the top-2 classes). Confirm which plant part best shows each problem."
+    "note": "Photography guidance for AI-assisted rice disease identification. Capture the recommended plant parts for the top-2 predicted classes, merge duplicate shots, and ask for expert confirmation when symptoms overlap."
   },
-  "generic": "Use daylight, keep the photo in focus, and use a plain background if you can.",
-  "unclear": "We could not recognise a clear rice plant in this photo. Please retake it with the affected leaf or plant part filling most of the frame, in good daylight, and in focus.",
+  "generic": "Take photos in good daylight, keep the camera steady and the affected area in focus. Avoid shadows and glare. Include both a close-up and a wider view when possible. Do not detach or handle plants unnecessarily.",
+  "unclear": "We could not clearly identify the rice plant or the affected area. Please retake the photo in good daylight with the affected leaf, shoot, insect, or panicle in focus. Include one close-up and one photo showing the whole plant.",
   "classes": {
     "bacterial_leaf_blight": {
       "shots": [
-        "a close-up of a single lesion on one leaf, filling most of the frame",
-        "one photo of the whole affected leaf"
+        "A close-up of the leaf tip and edge showing the affected area",
+        "One photo of the whole affected leaf",
+        "A photo of the whole plant showing whether several leaves are affected"
       ]
     },
     "bacterial_leaf_streak": {
       "shots": [
-        "a close-up of a single lesion on one leaf, filling most of the frame",
-        "one photo of the whole affected leaf"
+        "A close-up of the narrow, translucent streaks between leaf veins",
+        "One photo of the whole affected leaf",
+        "A photo of the whole plant showing the extent of symptoms"
       ]
     },
     "bacterial_panicle_blight": {
       "shots": [
-        "a close-up of the panicle (grain head)"
+        "A close-up of the affected panicle, including discoloured grains",
+        "A photo of the entire panicle attached to the plant",
+        "A comparison photo of an affected and apparently healthy panicle, if available"
       ]
     },
     "blast": {
       "shots": [
-        "a close-up of a single lesion on one leaf, filling most of the frame",
-        "the neck of the panicle, if panicles are affected"
+        "A close-up of a typical leaf lesion, including its shape and surrounding tissue",
+        "One photo of the whole affected leaf",
+        "If the panicle is affected, a close-up of the panicle neck and its attachment to the stem",
+        "A wider photo showing the crop stage and extent of symptoms"
       ]
     },
     "brown_spot": {
       "shots": [
-        "a close-up of a single lesion on one leaf, filling most of the frame"
+        "A close-up of a typical brown spot, showing its centre and margins",
+        "One photo of the whole affected leaf",
+        "A photo of the whole plant showing any yellowing or poor growth"
       ]
     },
     "dead_heart": {
       "shots": [
-        "the central shoot of the affected plant",
-        "one photo of the whole plant"
+        "A close-up of the central dead or drying shoot",
+        "A photo of the whole affected plant",
+        "If safely visible, a close-up of a bore hole, frass, egg mass, or larva without damaging additional plants"
       ]
     },
     "downy_mildew": {
       "shots": [
-        "a close-up of a single lesion on one leaf, filling most of the frame"
+        "A close-up of the affected leaf showing colour changes and any visible growth",
+        "A photo of the entire affected leaf",
+        "A photo of the whole plant showing leaf shape and growth pattern"
       ]
     },
     "hispa": {
       "shots": [
-        "a close-up of the damaged leaf surface",
-        "the insect itself, if you can see it"
+        "A close-up of the damaged leaf surface showing scraping or mining marks",
+        "A photo of the underside of the affected leaf",
+        "A close-up of the insect, if present and safely photographable",
+        "A wider photo showing how many leaves or plants are affected"
       ]
     },
     "normal": {
       "shots": [
-        "a close-up of the one leaf that looks suspicious"
+        "A clear photo of a representative leaf",
+        "A photo of the whole rice plant, including its base",
+        "If a specific area looks suspicious, take an additional close-up of that area"
       ]
     },
     "tungro": {
       "shots": [
-        "one photo of the whole plant",
-        "a close-up of a discoloured leaf"
+        "A photo of the whole plant showing height, tillering, and overall growth",
+        "A close-up of a discoloured leaf",
+        "A photo of several nearby plants to show whether yellowing or stunting is widespread",
+        "If visible, a close-up of a suspected green leafhopper"
       ]
     }
   }
