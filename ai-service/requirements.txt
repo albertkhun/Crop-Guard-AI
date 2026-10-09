@@ -1,5 +1,5 @@
 # Versions below are the ones the model was verified to load and run with (Python 3.12 sandbox).
-#tensorflow-cpu==2.20.0
+tensorflow-cpu==2.20.0
 keras==3.13.2
 numpy==2.5.3
 pillow==12.3.0
